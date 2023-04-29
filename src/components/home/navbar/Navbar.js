@@ -1,15 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import Burger from "../../images/menu.png";
 
 const Navbar = () => {
-
-    // const [show, setShow] = useState(false);
-
-    // const Hamburger = () => {
-    //     setShow(!show);
-    // }
 
   return (
 

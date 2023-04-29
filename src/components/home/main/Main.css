@@ -6,5 +6,27 @@
     background-size: 400px 400px;
     background-origin: content-box;
     background-position: center;
-    opacity: .3;
+    /* opacity: .3; */
+}
+
+.msg-box {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.show-msg {
+    /* visibility: hidden; */
+    padding: .5em 1.5em;
+    background-color: rgb(163, 91, 91);
+    border-radius: 1em;
+
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
