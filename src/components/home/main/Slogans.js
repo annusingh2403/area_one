@@ -22,7 +22,6 @@ const Slogans = [
         'Sip, chat, share, relax.',
         'Where coffee and community come together.',
         'Our passion is in our coffee.',
-        'The Perfect Blend of a Historic Neighborhood and a Modern Coffee Shop.',
         'Where friends meet, memories happen.',
         'This is one of the most important things you do today.',
         'Exchange cultural experiences over coffee.',

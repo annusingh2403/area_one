@@ -9,6 +9,12 @@
 
 .logo {
     font-size: 1.5rem;
+    color: rgb(138, 8, 8);
+}
+
+.navbar p {
+    font-size: .9rem;
+    color: rgb(207, 90, 109);
 }
 
 .nav-list {
@@ -23,6 +29,7 @@
 
 .navbar a {
     text-decoration: none;
+    color: rgb(138, 8, 8);
 }
 
 @media (max-width: 800px) {

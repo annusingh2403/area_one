@@ -10,8 +10,9 @@ const Navbar = () => {
         <nav className="navbar">
             <h3>
                 <Link to="/" className='logo'>
-                    Area_One
+                    Area_☻ne
                 </Link>
+                <p>The little coffee shop on the corner of the street ♥</p>
             </h3>
             <ul className='nav-list'>
                 <li><Link to="/">Home</Link></li>
