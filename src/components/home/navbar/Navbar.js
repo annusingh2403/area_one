@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link to="/" className='logo'>
                     Area_☻ne
                 </Link>
-                <p>The little coffee shop on the corner of the street ♥</p>
+                <p>♪ The little coffee shop on the corner of the street ♥</p>
             </h3>
             <ul className='nav-list'>
                 <li><Link to="/">Home</Link></li>
