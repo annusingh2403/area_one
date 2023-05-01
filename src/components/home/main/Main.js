@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Main.css';
 import Slogan from './Slogans';
 import bear from '../../../images/bear.avif';
@@ -8,11 +8,11 @@ import health from '../../../images/health.jpg';
 
 const Main = () => {
 
-    const [msg, setMsg] = useState(false);
-    const [position, setPosition] = useState([0,0])
+    const [msg, setMsg] = useState(true);
+    const [position, setPosition] = useState([311,301])
 
     const [number, setNumber] = useState(0);
-    const [slogan, setSlogan] = useState(Slogan);
+    const [slogan, setSlogan] = useState(Slogan[0]);
 
     const randomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1) + min)
@@ -22,9 +22,9 @@ const Main = () => {
         setMsg(!msg);
         setPosition([e.pageX,e.pageY])
         setNumber(randomNumber(0, 29))
+        setSlogan(Slogan[number])
     }
     
-
   return (
     <>
         <div>
@@ -39,7 +39,7 @@ const Main = () => {
                         tranform: "translateX(-50%)",
                         transform: "translateY(-50%)",
                         }}>
-                            {slogan[number]}
+                            {slogan}
                         </div>
                     )}
                 </div>

@@ -32,6 +32,12 @@
     color: rgb(138, 8, 8);
 }
 
+.navbar a:hover {
+    opacity: .5;
+    transition: all .5s ease;
+}
+
+
 @media (max-width: 800px) {
 
     .navbar {
