@@ -14,7 +14,6 @@
     height: 85vh;
 }
 
-
 .show-msg {
     width: auto;
     padding: .5em 1.5em;
@@ -22,6 +21,20 @@
     border-radius: 1em;
     color: white;
     animation: fadeIn 2s ease;
+}
+
+.section-one .top a{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 1.5rem;
+    position: fixed;
+    text-decoration: none;
+}
+
+.section-one .top a:hover {
+    opacity: .8;
+    transition: all .5s ease;
 }
 
                                                             /* SECTION ONE MEDIA QUERY */

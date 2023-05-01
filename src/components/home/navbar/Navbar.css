@@ -5,6 +5,13 @@
     justify-content: space-between;
     padding: 1.5em;
     font-size: 1rem;
+    top: 0;
+    position: sticky;
+    background-color: rgb(254, 254, 254);
+    /* border-bottom: 1px solid rgb(246, 242, 242); */
+    visibility: visible;
+    opacity: .8;
+    font-weight: 600;
 }
 
 .logo {
@@ -19,7 +26,7 @@
 
 .nav-list {
     display: flex;
-    width: 65%;
+    width: 60%;
     justify-content: space-between;
 }
 

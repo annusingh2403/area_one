@@ -19,8 +19,8 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth !important;
 }
 
 /* html, body {
@@ -32,9 +32,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  /* -webkit-user-select: none;
+  -webkit-user-select: none;
   -ms-user-select: none; 
-  user-select: none;  */
+  user-select: none; 
 }
 
 /* A elements that don't have a class get default styles */

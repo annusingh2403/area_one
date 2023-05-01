@@ -8,11 +8,11 @@ import health from '../../../images/health.jpg';
 
 const Main = () => {
 
-    const [msg, setMsg] = useState(true);
+    const [msg, setMsg] = useState(false);
     const [position, setPosition] = useState([311,301])
 
-    const [number, setNumber] = useState(0);
-    const [slogan, setSlogan] = useState(Slogan[0]);
+    const [number, setNumber] = useState(9);
+    const [slogan, setSlogan] = useState(Slogan[number]);
 
     const randomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1) + min)
@@ -24,11 +24,12 @@ const Main = () => {
         setNumber(randomNumber(0, 29))
         setSlogan(Slogan[number])
     }
+
     
   return (
     <>
         <div>
-            <div className='section-one'>
+            <div className='section-one' id='top'>
                 <div className="msg-box-1" onClick={handleClick}>
                     {/* <div className={msg ? "" : "show-msg"}>{slogan} </div> */}
                     {msg && (
@@ -43,6 +44,7 @@ const Main = () => {
                         </div>
                     )}
                 </div>
+                <p className='top'> <a href="#top">👆🏽</a></p>
             </div>
 
             <div className="section-two">
