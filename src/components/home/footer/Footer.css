@@ -1,0 +1,15 @@
+.footer {
+    align-items: center;
+    padding: 1.5em;
+    /* background-color: rgb(223, 218, 218); */
+    text-align: center;
+}
+
+.footer .media {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 10%;
+    margin: 0 auto;
+}
+
