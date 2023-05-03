@@ -1,21 +1,60 @@
                                                             /* SECTION ONE */
-.section-one {
-    width: 100%;
+.main-section-one {
+    width: 90%;
     height: 86vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+.main-section-one div {
+    width: 32.5%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 2em;
+}
+
+
+.menu .circle{
+    margin: 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+.menu .circle img {
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 27%;
+}
+
+.menu .circle img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+
+.msg-box-1 {
     background-image: url('../../../images/hero.png');
     background-repeat: no-repeat;
     background-size: 400px 400px;
     background-origin: content-box;
     background-position: center;
-}
-
-.msg-box-1 {
-    width: 90%;
-    height: 85vh;
+    width: 35%;
+    height: 50vh;
+    margin: 5em auto;
+    cursor: pointer;
 }
 
 .show-msg {
-    width: auto;
+    /* width: auto; */
     padding: .5em 1.5em;
     background-color: rgb(163, 91, 91);
     border-radius: 1em;
@@ -23,7 +62,7 @@
     animation: fadeIn 2s ease;
 }
 
-.section-one .top a{
+.main-section-one .top a{
     position: absolute;
     bottom: 1em;
     right: 1em;
@@ -32,7 +71,7 @@
     text-decoration: none;
 }
 
-.section-one .top a:hover {
+.main-section-one .top a:hover {
     opacity: .8;
     transition: all .5s ease;
 }
@@ -46,87 +85,18 @@
 
 @media (max-width: 800px) {
 
-    .section-one {
+    .main-section-one {
         background-size: 300px 300px;
     }
 }
 
 @media (max-width: 550px) {
 
-    .section-one {
+    .main-section-one {
         height: 50vh;
         background-size: 200px 200px;
     }
 }
 
-                                                            /* SECTION TWO */
-
-.section-two {
-    width: 100%;
-}
-
-.section-two h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1em 0 3em 0;
-    color: rgb(138, 8, 8);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.facts {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    margin: 0 auto;
-}
-
-.facts div {
-    width: 50%;
-}
-
-.facts .facts-images img{
-    width: 300px;
-    height: 250px;
-    margin: 0 auto;
-}
-
-.facts h4 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: .5em;
-}
-
-.facts p {
-    padding: .5em;
-}
-
-                                                            /* SECTION TWO MEDIA QUERY */
-
-@media (max-width: 800px) {
-
-    .facts {
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .facts div {
-        width: 50%;
-    }
-}
-
-@media (max-width: 550px) {
-
-    .facts {
-        display: block;
-        width: 90%;
-        border-bottom: 1px solid rgb(207, 203, 203);
-    }
-
-    .facts div {
-        width: 100%;
-    }
-}
+                                                            /* PRODUCTS-SECTION */
+ 

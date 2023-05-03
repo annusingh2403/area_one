@@ -1,0 +1,68 @@
+.section-one {
+    width: 100%;
+}
+
+.section-one h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1em 0 3em 0;
+    color: rgb(138, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.facts {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.facts div {
+    width: 50%;
+}
+
+.facts .facts-images img{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.facts h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: .5em;
+}
+
+.facts p {
+    padding: .5em;
+}
+
+
+@media (max-width: 800px) {
+
+    .facts {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .facts div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .facts {
+        display: block;
+        width: 90%;
+        border-bottom: 1px solid rgb(207, 203, 203);
+    }
+
+    .facts div {
+        width: 100%;
+    }
+}
