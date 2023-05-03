@@ -1,15 +1,49 @@
 .footer {
     align-items: center;
-    padding: 1.5em;
-    /* background-color: rgb(223, 218, 218); */
+    padding: 1em;
+    background-color: rgb(252, 245, 245);
     text-align: center;
+    margin-top: 3em;
 }
 
 .footer .media {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    width: 10%;
+    max-width: 300px;
     margin: 0 auto;
+    padding: 0.1 .2em;
+    font-size: 1.5rem;
+    margin-bottom: .5em;
 }
 
+.footer .copyright {
+    font-size: .9rem;
+}
+
+.insta-icon {
+  position: relative;
+  width: 24px;
+  height: 25px;
+  border-radius: 20%;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+.insta-icon:after,
+.insta-icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  content: ''
+}
+.insta-icon:before {
+  border-radius: 20%
+}
+.insta-icon:after {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%
+}

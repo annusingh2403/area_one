@@ -1,25 +1,23 @@
 import React from 'react';
 import "./Footer.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook} from '@fortawesome/free-solid-svg-icons'
+import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
       <div className="footer">
-      <div className="media">
-            <div className="twitter"> <FontAwesomeIcon icon={faBook} /></div>
-            <div className="instagram"></div>
-            <div className="facebook">Facebook</div>
-            <div className="youtube"></div>
-        </div>
-        <div className="address">
-            <p>© Since - 2023 / Area_☻ne</p>
-        </div>
-        
+            <div className="media">
+                <div className="twitter" style={{color: 'blue'}}> <FaTwitter/></div>
+                <div className="insta-icon"></div>
+                <div className="facebook" style={{color: 'blue'}}><FaFacebook/></div>
+                <div className="youtube" style={{color: 'red'}}><FaYoutube/></div>
+            </div>
+            <div className="copyright">
+                <p>© Since - 2023 / Area_☻ne</p>
+            </div>
       </div>
     </>
   )
 }
 
-export default Footer
+export default Footer;
