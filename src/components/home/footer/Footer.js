@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="youtube" style={{color: 'red'}}><FaYoutube/></div>
             </div>
             <div className="copyright">
-                <p>© Since - 2023 / Area_☻ne</p>
+                <p>© 2023 Area_☻ne. All rights reserved.</p>
             </div>
       </div>
     </>

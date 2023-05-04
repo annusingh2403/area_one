@@ -47,10 +47,11 @@ const Main = () => {
                     </div>
                     <p>Hot Drinks</p>
                 </div>
-                <div className="msg-box-1" onClick={handleClick}>
+                <div className="msg-box" onClick={handleClick}>
                     {msg && (
-                        <div className={msg ? "show-msg" : "show-msg"} style={{
+                        <div className={msg ? "show-msg" : ""} style={{
                         position: "absolute",
+                        width: 'auto',
                         left: position[0],
                         top: position[1],
                         tranform: "translateX(-50%)",
@@ -78,14 +79,64 @@ const Main = () => {
             </div>
 
             <div className="section-products">
+                <h5>♥ Low cost. High quality ♥</h5>
+
                 <div className="products-container">
                     <div className="products">
-                        <div className="product-img">
-                            <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                        <div className="product-top">
+                            <div className="product-img">
+                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                            </div>
+                            <div className="product-desc">
+                                <p>Espress</p>
+                                <p>Best is coffee</p>
+                            </div>
                         </div>
-                        <div className="product-desc">
-                            <h5>Espresso</h5>
-                            <p>This coffee is so good</p>
+                        <div className="product-bottom">
+                            <div className="price">
+                                $20
+                            </div>
+                            <div className="add-item">
+                                Add Item
+                            </div>
+                        </div>
+                    </div>
+                    <div className="products">
+                        <div className="product-top">
+                            <div className="product-img">
+                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                            </div>
+                            <div className="product-desc">
+                                <p>Espress</p>
+                                <p>Best is coffee</p>
+                            </div>
+                        </div>
+                        <div className="product-bottom">
+                            <div className="price">
+                                $20
+                            </div>
+                            <div className="add-item">
+                                Add Item
+                            </div>
+                        </div>
+                    </div>
+                    <div className="products">
+                        <div className="product-top">
+                            <div className="product-img">
+                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                            </div>
+                            <div className="product-desc">
+                                <p>Espress</p>
+                                <p>Best is coffee</p>
+                            </div>
+                        </div>
+                        <div className="product-bottom">
+                            <div className="price">
+                                $20
+                            </div>
+                            <div className="add-item">
+                                Add Item
+                            </div>
                         </div>
                     </div>
                 </div>
