@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1694d66b.css",
+    "main.js": "/static/js/main.b52e09b9.js",
+    "static/media/hero.png": "/static/media/hero.02693a35f9db8454d2e0.png",
+    "static/media/bestseller.jpg": "/static/media/bestseller.f8b5311b3f5d83d5b450.jpg",
+    "static/media/health.jpg": "/static/media/health.cf789f178b1f06c5e278.jpg",
+    "static/media/coffee.jpg": "/static/media/coffee.3bdb0849075ef6981b77.jpg",
+    "static/media/cake.jpg": "/static/media/cake.a748a3ed295c0a27bf73.jpg",
+    "static/media/hotdrinks.jpg": "/static/media/hotdrinks.547b8ad7eb8fd2208832.jpg",
+    "static/media/food.jpg": "/static/media/food.8a0f725e6b027a18ee40.jpg",
+    "static/media/colddrinks.jpg": "/static/media/colddrinks.ddfd991562dd8b91009f.jpg",
+    "static/media/goat.png": "/static/media/goat.494e3d83927f93aeabf4.png",
+    "static/media/bear.avif": "/static/media/bear.b1f8d8c07964b2658434.avif",
+    "static/media/biodiesel.webp": "/static/media/biodiesel.59cf1045ae421efd1cf2.webp",
+    "index.html": "/index.html",
+    "main.1694d66b.css.map": "/static/css/main.1694d66b.css.map",
+    "main.b52e09b9.js.map": "/static/js/main.b52e09b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1694d66b.css",
+    "static/js/main.b52e09b9.js"
+  ]
+}
