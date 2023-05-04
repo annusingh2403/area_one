@@ -7,6 +7,8 @@ import Hotdrinks from '../../../images/hotdrinks.jpg';
 import Coffee from '../../../images/coffee.jpg';
 import Food from '../../../images/food.jpg';
 import Cake from '../../../images/cake.jpg';
+import Cappuchino from '../../../images/cappuchino.jpg';
+import { FaVimeoSquare, FaRupeeSign } from "react-icons/fa";
 
 
 const Main = () => {
@@ -85,19 +87,20 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                                <img src={Cappuchino} alt="" />
                             </div>
                             <div className="product-desc">
-                                <p>Espress</p>
-                                <p>Best is coffee</p>
+                                <span className='veg'> <FaVimeoSquare/> </span>
+                                <h className="product-name">Cappuccino</h>
+                                <p className='phrase'>The perfect balance of espresso, steamed milk and foam.</p>
                             </div>
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                $20
+                                ₹90/- 
                             </div>
                             <div className="add-item">
-                                Add Item
+                                <button>Add Item</button>
                             </div>
                         </div>
                     </div>
@@ -107,16 +110,17 @@ const Main = () => {
                                 <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
                             </div>
                             <div className="product-desc">
-                                <p>Espress</p>
-                                <p>Best is coffee</p>
+                                <span className='veg'> <FaVimeoSquare/> </span>
+                                <h className="product-name">Mocha</h>
+                                <p className='phrase'>Combined with a chocolate powder or syrup, followed by milk or cream.</p>
                             </div>
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                $20
+                                ₹100/- 
                             </div>
                             <div className="add-item">
-                                Add Item
+                                <button>Add Item</button>
                             </div>
                         </div>
                     </div>
@@ -126,16 +130,17 @@ const Main = () => {
                                 <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
                             </div>
                             <div className="product-desc">
-                                <p>Espress</p>
-                                <p>Best is coffee</p>
+                                <span className='veg'> <FaVimeoSquare/> </span>
+                                <h className="product-name">Latte</h>
+                                <p className='phrase'>Contain two shots of espresso, steamed milk, and foam on the top.</p>
                             </div>
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                $20
+                                ₹95/- 
                             </div>
                             <div className="add-item">
-                                Add Item
+                                <button>Add Item</button>
                             </div>
                         </div>
                     </div>
