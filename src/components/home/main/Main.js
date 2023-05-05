@@ -8,7 +8,9 @@ import Coffee from '../../../images/coffee.jpg';
 import Food from '../../../images/food.jpg';
 import Cake from '../../../images/cake.jpg';
 import Cappuchino from '../../../images/cappuchino.jpg';
-import { FaVimeoSquare, FaRupeeSign } from "react-icons/fa";
+import Mocha from '../../../images/mocha.jpg';
+import Latte from '../../../images/latte.jpg';
+import { FaVimeoSquare } from "react-icons/fa";
 
 
 const Main = () => {
@@ -87,7 +89,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <img src={Cappuchino} alt="" />
+                                <a href=""><img src={Cappuchino} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
@@ -107,7 +109,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                                <a href=""><img src={Mocha} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
@@ -127,7 +129,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <img src="https://images.pexels.com/photos/3879495/pexels-photo-3879495.jpeg?auto=compress&cs=tinysrgb&w=150" alt="" />
+                                <a href=""><img src={Latte} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
