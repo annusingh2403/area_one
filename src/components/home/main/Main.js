@@ -11,6 +11,7 @@ import Cappuchino from '../../../images/cappuchino.jpg';
 import Mocha from '../../../images/mocha.jpg';
 import Latte from '../../../images/latte.jpg';
 import { FaVimeoSquare } from "react-icons/fa";
+import Offer from '../offer/Offer';
 
 
 const Main = () => {
@@ -81,6 +82,8 @@ const Main = () => {
                 </div>
                 <p className='top'> <a href="#top">👆🏽</a></p>
             </div>
+            
+            <Offer/>
 
             <div className="section-products">
                 <h5>♥ Low cost. High quality ♥</h5>

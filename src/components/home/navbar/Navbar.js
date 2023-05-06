@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
 
-    <>
-        <nav className="navbar">
+    <div className='navbar'>
+        <nav className="nav">
             <h3>
                 <Link to="/" className='logo'>
                     Area_☻ne
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
-    </>
+    </div>
     
   )
 }

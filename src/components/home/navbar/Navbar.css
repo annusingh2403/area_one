@@ -1,15 +1,19 @@
 .navbar {
+    width: 100%;
+    background-color: rgb(253, 251, 251);
+    position: sticky;
+    top: 0;
+}
+
+.nav {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 1em 0;
     font-size: 1rem;
-    top: 0;
-    position: sticky;
-    background-color: rgb(254, 254, 254);
-    opacity: .8;
     font-weight: 600;
+    align-items: center;
 }
 
 .logo {
@@ -39,7 +43,7 @@
 
 .navbar a:hover {
     opacity: .5;
-    transition: all .5s ease;
+    transition: all .2s ease;
 }
 
 

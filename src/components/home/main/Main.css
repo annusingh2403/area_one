@@ -109,7 +109,7 @@
                                                             /* PRODUCTS-SECTION */
  
 .section-products {
-    width: 85%;
+    width: 80%;
     margin: 5em auto;
 
 }
@@ -117,8 +117,8 @@
 .section-products h5 {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(138, 8, 8);
-    text-align: center;
+    /* color: rgb(138, 8, 8); */
+    font-weight: 900;
 }
 
 .products-container {
@@ -247,6 +247,10 @@
 
 @media (max-width: 550px) {
 
+    .section-products {
+        width: 80%;
+    }
+
     .products-container {
         display: flex;
         justify-content: center;
@@ -255,7 +259,7 @@
     }
 
     .products {
-        width: 80%;
+        width: 100%;
         margin: .5em;
     }
 }
