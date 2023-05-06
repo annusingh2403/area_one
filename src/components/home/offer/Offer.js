@@ -11,8 +11,8 @@ const Offer = () => {
                 <img src={offer} alt="" />
             </div>
             <div className="offer-desc">
-                <p>BUY ONE GET ONE FREE ☺</p>
-                <p></p>
+                <p className='offer-heading'>BUY ONE GET ONE FREE***</p>
+                <p>We have a Sale that Brings joy.</p>
             </div>
             <div className="offer-button">
 

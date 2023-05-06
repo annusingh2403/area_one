@@ -1,8 +1,9 @@
 .navbar {
     width: 100%;
-    background-color: rgb(253, 251, 251);
+    background-color: white;
     position: sticky;
     top: 0;
+    display: flex;
 }
 
 .nav {
@@ -49,7 +50,7 @@
 
 @media (max-width: 800px) {
 
-    .navbar {
+    .nav {
         width: 90%;
     }
 
@@ -62,7 +63,7 @@
 
 @media (max-width: 550px) {
 
-    .navbar {
+    .nav {
         width: 100%;
         display: block;
         text-align: center;

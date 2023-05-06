@@ -85,6 +85,8 @@ const Main = () => {
             
             <Offer/>
 
+                                                        {/* SECTION - PRODUCTS */}
+
             <div className="section-products">
                 <h5>♥ Low cost. High quality ♥</h5>
 
