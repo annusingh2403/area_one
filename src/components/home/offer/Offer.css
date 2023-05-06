@@ -11,22 +11,37 @@
     font-weight: 900;
 }
 
+.offer-term {
+    background-color: rgb(163, 91, 91);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.offer-term p {
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+    font-size: .7rem;
+    color: rgb(245, 243, 243);
+    font-weight: 900;
+}
+
 .offer {
     background-color: rgb(163, 91, 91);
     color: white;
     margin: 0 auto;
-    border-radius: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     padding: 2em;
-    
 }
 
 .offer .img {
-    width: 200px;
+    width: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: -100px;
-    background: transparent;
 }
 
 .offer-desc {
@@ -38,5 +53,48 @@
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+}
+
+.offer-price {
+    margin-top: 3em;
+    font-size: .8rem;
+    color: wheat;
+}
+
+
+.offer-button {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.offer-button button {
+    padding: 1em 5em;
+    border-radius: 50px;
+    border: none;
+    color: rgb(94, 31, 31);
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.offer-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-tabs .offer-tab-not-clicked {
+    margin: 1em;
+    color: rgb(109, 45, 45);
+    opacity: .3;
+    cursor: pointer;
+}
+
+.offer-tabs .offer-tab-clicked {
+    margin: 1em;
+    color: rgb(109, 45, 45);
+    transform: scale(1.1);
+    transition: all .2s ease;
 }
 
