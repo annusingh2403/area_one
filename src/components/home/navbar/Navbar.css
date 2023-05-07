@@ -47,6 +47,15 @@
     transition: all .2s ease;
 }
 
+.navbar a:focus {
+    outline: none;  
+}
+
+.activeNav {
+    border-bottom: 2px solid rgb(138, 8, 8);
+    padding-bottom: .5em;
+}
+
 
 @media (max-width: 800px) {
 
