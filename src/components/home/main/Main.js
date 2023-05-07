@@ -104,7 +104,7 @@ const Main = () => {
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                ₹90/- 
+                                ₹ 90/- 
                             </div>
                             <div className="add-item">
                                 <button>Add Item</button>
@@ -124,7 +124,7 @@ const Main = () => {
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                ₹100/- 
+                                ₹ 100/- 
                             </div>
                             <div className="add-item">
                                 <button>Add Item</button>
@@ -144,7 +144,7 @@ const Main = () => {
                         </div>
                         <div className="product-bottom">
                             <div className="price">
-                                ₹95/- 
+                                ₹ 95/- 
                             </div>
                             <div className="add-item">
                                 <button>Add Item</button>

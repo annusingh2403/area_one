@@ -13,8 +13,6 @@
 
 .offer-term {
     background-color: rgb(163, 91, 91);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     position: relative;
 }
 
@@ -29,12 +27,13 @@
 
 .offer {
     background-color: rgb(163, 91, 91);
+    height: 240px;
     color: white;
     margin: 0 auto;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     display: flex;
-    padding: 2em;
+    padding: 3em;
+    transition: all .4s ease-in;
 }
 
 .offer .img {
@@ -45,6 +44,7 @@
 }
 
 .offer-desc {
+    width: 35%;
     padding-left: 2em;
 }
 
@@ -79,6 +79,12 @@
     font-size: .8rem;
 }
 
+.offer-button button:hover {
+    opacity: .5;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
 .offer-tabs {
     display: flex;
     justify-content: center;
@@ -96,5 +102,16 @@
     color: rgb(109, 45, 45);
     transform: scale(1.1);
     transition: all .2s ease;
+}
+
+.tab2 {
+    background-color: rgb(199, 181, 77);
+    transition: all .4s ease-in;
+}
+
+.tab3 {
+    background-color: green;
+    transition: all .4s ease-in;
+
 }
 
