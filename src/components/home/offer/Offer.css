@@ -32,6 +32,7 @@
     margin: 0 auto;
     border-radius: 5px;
     display: flex;
+    justify-content: space-between;
     padding: 3em;
     transition: all .4s ease-in;
 }
@@ -66,7 +67,6 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 6em;
 }
 
@@ -99,7 +99,7 @@
 
 .offer-tabs .offer-tab-clicked {
     margin: 1em;
-    color: rgb(109, 45, 45);
+    color: rgb(163, 91, 91);
     transform: scale(1.1);
     transition: all .2s ease;
 }
@@ -112,6 +112,157 @@
 .tab3 {
     background-color: green;
     transition: all .4s ease-in;
-
 }
 
+.tab2-emoji {
+    color: rgb(199, 181, 77) !important;
+}
+
+.tab3-emoji {
+    color: green !important;
+}
+
+                                                /* OFFER-SECTION MEIDA QUERY*/
+
+
+@media (max-width: 800px) {
+
+    .offer-desc {
+        width: 60%;
+    }
+    
+    .offer-heading {
+        margin-bottom: .5em;
+        font-size: 1rem;
+    }
+    
+    .offer-price {
+        margin-top: 2em;
+        font-size: .8rem;
+    }
+    
+    .offer-button {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6em;
+    }
+    
+    .offer-button button {
+        padding: 1em 5em;
+        border-radius: 50px;
+        border: none;
+        color: rgb(94, 31, 31);
+        font-weight: 700;
+        font-size: .8rem;
+    }
+    
+    
+}
+
+@media (max-width: 666px) {
+    
+    
+    
+}
+
+@media (max-width: 550px) {
+    
+    .offer {
+        padding: 2.5em;
+    }
+    
+    .offer-desc {
+        width: 60%;
+        padding-left: 1em;
+    }
+
+    .offer .img {
+        width: 140px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -90px;
+    }
+    
+    .offer-phrase {
+        font-size: .8rem;
+    }
+    
+    .offer-heading {
+        margin-bottom: .5em;
+        font-size: .8rem;
+    }
+    
+    .offer-price {
+        margin-top: 2em;
+        font-size: .8rem;
+    }
+    
+    .offer-button {
+        /* width: 45%; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7em;
+    }
+    
+    .offer-button button {
+        padding: .4em 1.5em;
+        border-radius: 50px;
+        border: none;
+        color: rgb(94, 31, 31);
+        font-weight: 700;
+        font-size: .7rem;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    
+    .offer {
+        padding: 2em;
+    }
+    
+    .offer .img {
+        width: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -60px;
+    }
+
+    .offer-desc {
+        width: 60%;
+        padding-left: 1em;
+    }
+    
+    .offer-phrase {
+        font-size: .7rem;
+    }
+    
+    .offer-heading {
+        margin-bottom: .5em;
+        font-size: .8rem;
+    }
+    
+    .offer-price {
+        margin-top: 2em;
+        font-size: .8rem;
+    }
+    
+    .offer-button {
+        /* width: 45%; */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7em;
+    }
+    
+    .offer-button button {
+        padding: .4em 1.5em;
+        border-radius: 50px;
+        border: none;
+        color: rgb(94, 31, 31);
+        font-weight: 700;
+        font-size: .6rem;
+    }
+    
+   
+}

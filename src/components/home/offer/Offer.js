@@ -57,21 +57,24 @@ const Offer = () => {
                 </div>
                 <div className="offer-desc">
                     <p className='offer-heading'>{tabs[count].heading}</p>
-                    <p>{tabs[count].phrase}</p>
+                    <p className='offer-phrase'>{tabs[count].phrase}</p>
                     <p className='offer-price'>Starting From</p>
                     <p>₹{tabs[count].price}/- </p>
                 </div>
                 <div className="offer-button">
                     <div></div>
                     <div></div>
-                    <button>Know More </button>
+                    <div>
+                        <button>Know More </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
         <div className="offer-tabs">
             <div className={clicked === "tab1" ? "offer-tab-clicked" : "offer-tab-not-clicked"} onClick={e => offerTab(e, "tab1")}><FaSmile/></div>
-            <div className={clicked === "tab2" ? "offer-tab-clicked" : "offer-tab-not-clicked"} onClick={e => offerTab(e, "tab2")}><FaSmileBeam/></div>
-            <div className={clicked === "tab3" ? "offer-tab-clicked" : "offer-tab-not-clicked"} onClick={e => offerTab(e, "tab3")}><FaSmileWink/></div>
+            <div className={clicked === "tab2" ? "offer-tab-clicked tab2-emoji" : "offer-tab-not-clicked"} onClick={e => offerTab(e, "tab2")}><FaSmileBeam/></div>
+            <div className={clicked === "tab3" ? "offer-tab-clicked tab3-emoji" : "offer-tab-not-clicked"} onClick={e => offerTab(e, "tab3")}><FaSmileWink/></div>
         </div>
     </div>
   )
