@@ -5,7 +5,7 @@ import Navbar from './components/home/navbar/Navbar';
 import Home from './components/home/Home';
 import Facts from './components/facts/Facts';
 import Gallery from './components/gallery/Gallery';
-import About from './components/about/About';
+import Order from './components/order/Order';
 import Contact from './components/contact/Contact';
 import Footer from './components/home/footer/Footer';
 
@@ -16,9 +16,9 @@ function App() {
 
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/products" element={<Facts/>} />
+            <Route path="/order" element={<Order/>} />
+            <Route path="/facts" element={<Facts/>} />
             <Route path="/gallery" element={<Gallery/>} />
-            <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
         </Routes>
 
