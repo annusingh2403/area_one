@@ -12,6 +12,7 @@ import Mocha from '../../../images/mocha.jpg';
 import Latte from '../../../images/latte.jpg';
 import { FaVimeoSquare } from "react-icons/fa";
 import Offer from '../offer/Offer';
+import { Link } from 'react-router-dom';
 
 
 const Main = () => {
@@ -40,15 +41,15 @@ const Main = () => {
             <div className='main-section-one' id='top'>
                 <div className="menu">
                     <div className="circle">
-                        <img src={Bestseller} alt="" />
+                        <Link to="/order"><img src={Bestseller} alt="" /></Link>
                     </div>
                     <p>Bestseller</p>
                     <div className="circle">
-                        <img src={Colddrinks} alt="" />
+                        <Link to='/order'><img src={Colddrinks} alt="" /></Link>
                     </div>
                     <p>Cold Drinks</p>
                     <div className="circle">
-                        <img src={Hotdrinks} alt="" />
+                        <Link to='/order'><img src={Hotdrinks} alt="" /></Link>
                     </div>
                     <p>Hot Drinks</p>
                 </div>
@@ -68,15 +69,15 @@ const Main = () => {
                 </div>
                 <div className="menu">
                     <div className="circle">
-                        <img src={Coffee} alt="" />
+                        <Link to='/order'><img src={Coffee} alt="" /></Link>
                     </div>
                     <p>Coffee</p>
                     <div className="circle">
-                        <img src={Food} alt="" />    
+                        <Link to='/order'><img src={Food} alt="" /></Link>   
                     </div>
                     <p>Food</p>
                     <div className="circle">
-                        <img src={Cake} alt="" />
+                        <Link to='/order'><img src={Cake} alt="" /></Link>
                     </div>
                     <p>Cake</p>
                 </div>
