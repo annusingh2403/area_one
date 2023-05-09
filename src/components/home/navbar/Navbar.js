@@ -6,7 +6,7 @@ const Navbar = () => {
     // const location = useLocation();
     // const navigate = useNavigate();
 
-    const [nav, setNav] = useState('');
+    const [nav, setNav] = useState('home');
 
     const activeNav = (e, param) => {
         setNav(param);
