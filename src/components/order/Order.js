@@ -2,21 +2,32 @@ import React, { useState } from 'react';
 import './Order.css';
 import Cappuchino from '../../images/cappuchino.jpg';
 import { FaVimeoSquare } from "react-icons/fa";
+import { Products } from './Products';
 
 
 const Order = () => {
 
     const [state, setState] = useState('bestseller');
+    const [products, setProducts] = useState(Products);
+
+    const filterByType = (type) => {
+        setProducts(
+            products.filter(product => product.type === type)
+        )
+    }
 
     const orderNav = (param) => {
         setState(param);
+        filterByType(param);
     }
+
 
   return (
     <>
         <div className="order-navbar">
             <div>
                 <button className={state === "bestseller" ? "order-tabs" : '' } onClick={((e) => orderNav('bestseller'))}>Bestseller</button>
+                {/* <button className={state === "bestseller" ? "order-tabs" : '' } onClick={((e) => orderNav('bestseller'))}>Bestseller</button> */}
             </div>
             <div>
                 <button className={state === "cold" ? "order-tabs" : '' } onClick={((e) => orderNav('cold'))}>Cold Drinks</button>
@@ -37,26 +48,37 @@ const Order = () => {
 
       
         <div className='order-main'>
-        <div className="products">
-                        <div className="product-top">
-                            <div className="product-img">
-                                <a href=""><img src={Cappuchino} alt="" /></a> 
+            <div className="section-products">
+                <div className="products-container">
+
+                {products.map(({img, icon, name, phrase, price, id}) => {
+                    return (
+
+                            <div className="products" key={id}>
+                                <div className="product-top">
+                                    <div className="product-img">
+                                        <a href=""><img src={img} alt="" /></a> 
+                                    </div>
+                                    <div className="product-desc">
+                                        <span className='veg'> {icon} </span>
+                                        <h className="product-name">{name}</h>
+                                        <p className='phrase'>{phrase}</p>
+                                    </div>
+                                </div>
+                                <div className="product-bottom">
+                                    <div className="price">
+                                        ₹ {price}/- 
+                                    </div>
+                                    <div className="add-item">
+                                        <button>Add Item</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="product-desc">
-                                <span className='veg'> <FaVimeoSquare/> </span>
-                                <h className="product-name">Cappuccino</h>
-                                <p className='phrase'>The perfect balance of espresso, steamed milk and foam.</p>
-                            </div>
-                        </div>
-                        <div className="product-bottom">
-                            <div className="price">
-                                ₹ 90/- 
-                            </div>
-                            <div className="add-item">
-                                <button>Add Item</button>
-                            </div>
-                        </div>
-                    </div>
+                            )
+                        })}
+
+                </div>
+            </div>
         </div>
         </>
   )
