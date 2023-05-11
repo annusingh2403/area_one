@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Order.css';
 import Cappuchino from '../../images/cappuchino.jpg';
 import { FaVimeoSquare } from "react-icons/fa";
@@ -7,12 +7,18 @@ import { Products } from './Products';
 
 const Order = () => {
 
-    const [state, setState] = useState('bestseller');
-    const [products, setProducts] = useState(Products);
+    const [state, setState] = useState('');
+    const [allProducts, setAllProducts] = useState([]);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        setProducts(Products);
+        setAllProducts(Products)
+    }, []);
 
     const filterByType = (type) => {
         setProducts(
-            products.filter(product => product.type === type)
+            allProducts.filter(product => product.type === type)
         )
     }
 

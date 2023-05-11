@@ -11,8 +11,6 @@ const Navbar = () => {
     const activeNav = (e, param) => {
         setNav(param);
     }
-
-    console.log(nav);
     
     // navigate(0)
 
