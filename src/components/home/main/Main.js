@@ -95,11 +95,11 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href=""><img src={Cappuchino} alt="" /></a> 
+                                <a href="/"><img src={Cappuchino} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
-                                <h className="product-name">Cappuccino</h>
+                                <p className="product-name">Cappuccino</p>
                                 <p className='phrase'>The perfect balance of espresso, steamed milk and foam.</p>
                             </div>
                         </div>
@@ -115,11 +115,11 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href=""><img src={Mocha} alt="" /></a> 
+                                <a href="/"><img src={Mocha} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
-                                <h className="product-name">Mocha</h>
+                                <p className="product-name">Mocha</p>
                                 <p className='phrase'>Combined with a chocolate powder or syrup, followed by milk or cream.</p>
                             </div>
                         </div>
@@ -135,11 +135,11 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href=""><img src={Latte} alt="" /></a> 
+                                <a href="/"><img src={Latte} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
-                                <h className="product-name">Latte</h>
+                                <p className="product-name">Latte</p>
                                 <p className='phrase'>Contain two shots of espresso, steamed milk, and foam on the top.</p>
                             </div>
                         </div>

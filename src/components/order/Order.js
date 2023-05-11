@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Order.css';
-import Cappuchino from '../../images/cappuchino.jpg';
-import { FaVimeoSquare } from "react-icons/fa";
 import { Products } from './Products';
 
 
@@ -63,11 +61,11 @@ const Order = () => {
                             <div className="products" key={id}>
                                 <div className="product-top">
                                     <div className="product-img">
-                                        <a href=""><img src={img} alt="" /></a> 
+                                        <a href="/order"><img src={img} alt="" /></a> 
                                     </div>
                                     <div className="product-desc">
                                         <span className='veg'> {icon} </span>
-                                        <h className="product-name">{name}</h>
+                                        <p className="product-name">{name}</p>
                                         <p className='phrase'>{phrase}</p>
                                     </div>
                                 </div>
