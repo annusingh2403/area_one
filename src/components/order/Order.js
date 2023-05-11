@@ -25,6 +25,11 @@ const Order = () => {
         filterByType(param);
     }
 
+    const singleProduct = (e) => {
+        // const id = products.find((e) => e.id === id)
+        console.log(e.target.key);
+    }
+
 
   return (
     <>
@@ -58,7 +63,7 @@ const Order = () => {
                 {products.map(({img, icon, name, phrase, price, id}) => {
                     return (
 
-                            <div className="products" key={id}>
+                            <div className="products" key={id} onClick={singleProduct}>
                                 <div className="product-top">
                                     <div className="product-img">
                                         <a href="/order"><img src={img} alt="" /></a> 
