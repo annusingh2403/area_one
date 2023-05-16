@@ -8,6 +8,7 @@ const Order = () => {
     const [state, setState] = useState('');
     const [allProducts, setAllProducts] = useState([]);
     const [products, setProducts] = useState([]);
+    const [singleProductId, setSingleProductId] = useState([0]);
 
     useEffect(() => {
         setProducts(Products);
@@ -25,9 +26,8 @@ const Order = () => {
         filterByType(param);
     }
 
-    const singleProduct = (e) => {
-        // const id = products.find((e) => e.id === id)
-        console.log(e.target.key);
+    const singleProduct = (id) => {   
+        setSingleProductId(id)
     }
 
 
@@ -54,7 +54,6 @@ const Order = () => {
                 <button className={state === "cake" ? "order-tabs" : '' } onClick={((e) => orderNav('cake'))}>Cake</button>
             </div>
         </div>
-
       
         <div className='order-main'>
             <div className="section-products">
@@ -63,7 +62,7 @@ const Order = () => {
                 {products.map(({img, icon, name, phrase, price, id}) => {
                     return (
 
-                            <div className="products" key={id} onClick={singleProduct}>
+                            <div className="products" key={id} onClick={(() => singleProduct(id))}>
                                 <div className="product-top">
                                     <div className="product-img">
                                         <a href="/order"><img src={img} alt="" /></a> 
@@ -88,8 +87,9 @@ const Order = () => {
 
                 </div>
             </div>
-        </div>
-        </>
+        </div>          
+        
+    </>
   )
 }
 
