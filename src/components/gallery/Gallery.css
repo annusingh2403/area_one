@@ -1,59 +1,127 @@
+.gallery {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .gallery-head {
-    width: 100%;
     height: 80vh;
+    margin: 0 auto;
 }
 
 .gallery-head div {
-    width: 300px;
+    position: absolute;
+    width: 270px;
+}
+
+.gallery-head div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all .2s ease-in;
+    z-index: 5;
 }
 
 .gallery-head img {
-    position: absolute;
+    /* position: relative; */
     width: 100%;
+    border-radius: 5px;
 }
 
 .gimage-one {
-    position: absolute;
-    top: 20%;
+    /* position: relative; */
+    top: 18%;
     left: 42%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .gimage-two {
-    position: absolute;
+    /* position: relative; */
     top: 30%;
     left: 29%;
-    z-index: -1;
-}
-
-.gimage-three {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-}
-
-.gimage-four {
-    position: absolute;
-    top: 55%;
-    left: 30%;
     z-index: 1;
 }
 
+.gimage-three {
+    /* position: relative; */
+    top: 40%;
+    left: 45%;
+    z-index: 1;
+}
+
+.gimage-four {
+    /* position: relative; */
+    top: 55%;
+    left: 30%;
+    z-index: 3;
+}
+
 .gimage-five {
-    position: absolute;
-    top: 60%;
-    left: 48%;
+    /* position: relative; */
+    top: 65%;
+    left: 44%;
 }
 
 .gimage-six {
-    position: absolute;
-    top: 35%;
-    left: 12%;
-    z-index: 0;
+    position: relative;
+    top: 38%;
+    left: 14%;
+    z-index: 2;
 }
 
 .gimage-seven {
-    position: absolute;
-    top: 35%;
-    left: 65%;
+    position: relative;
+    top: 30%;
+    left: 62%;
 }
+
+                                                            /* GALLERY-HEAD MEDIA QUERY*/
+
+@media (max-width: 1024px) {
+
+    .gallery-head div {
+        width: 270px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .gallery-head div {
+        width: 240px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 666px) {
+
+    .gallery-head div {
+        width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .gallery-head div {
+        width: 170px;
+        margin-top: 20%;
+    }
+}
+
+                                                            /* GALLERY-BODY */
+
+.gallery-body {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-image-box {
+    width: 25%;
+    /* height: 10%; */
+    padding: 1em;
+}
+
+.gallery-image-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
