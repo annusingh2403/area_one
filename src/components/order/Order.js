@@ -8,7 +8,7 @@ const Order = () => {
     const [state, setState] = useState('');
     const [allProducts, setAllProducts] = useState([]);
     const [products, setProducts] = useState([]);
-    const [singleProductId, setSingleProductId] = useState([0]);
+    const [singleProductId, setSingleProductId] = useState([]);
 
     useEffect(() => {
         setProducts(Products);
@@ -55,16 +55,16 @@ const Order = () => {
             </div>
         </div>
       
-        <div className='order-main'>
+        <div className={singleProductId === 1 ? "single-product-section" : 'order-main'}>
             <div className="section-products">
                 <div className="products-container">
 
                 {products.map(({img, icon, name, phrase, price, id}) => {
                     return (
 
-                            <div className="products" key={id} onClick={(() => singleProduct(id))}>
-                                <div className="product-top">
-                                    <div className="product-img">
+                            <div className={singleProductId === id ? "single-product" : 'products'} key={id} onClick={(() => singleProduct(id))}>
+                                <div className={singleProductId === id ? "single-product-top" : 'product-top'}>
+                                    <div className={singleProductId === id ? "single-product-img" : 'product-img'}>
                                         <a href="/order"><img src={img} alt="" /></a> 
                                     </div>
                                     <div className="product-desc">
