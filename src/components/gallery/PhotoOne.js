@@ -1,9 +1,6 @@
-export const Photos = [
+export const PhotoOne = [
     {
-        img: "https://images.pexels.com/photos/2013701/pexels-photo-2013701.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        img: "https://images.pexels.com/photos/9077344/pexels-photo-9077344.jpeg?auto=compress&cs=tinysrgb&w=600"
+        img: "https://images.pexels.com/photos/2013701/pexels-photo-2013701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         img: "https://images.pexels.com/photos/2323183/pexels-photo-2323183.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -37,17 +34,5 @@ export const Photos = [
     },
     {
         img: "https://images.pexels.com/photos/302901/pexels-photo-302901.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        img: "https://images.pexels.com/photos/3808128/pexels-photo-3808128.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        img: "https://images.pexels.com/photos/6612746/pexels-photo-6612746.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        img: "https://images.pexels.com/photos/9051645/pexels-photo-9051645.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        img: "https://images.pexels.com/photos/4920885/pexels-photo-4920885.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
+    }
 ]

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Gallery.css';
-import {Photos} from './Photos';
+import {PhotoOne} from './PhotoOne';
+import {PhotoTwo} from './PhotoTwo';
+import {PhotoThird} from './PhotoThird';
 import GimageOne from '../../images/gimage-one.jpg';
 import GimageTwo from '../../images/gimage-two.jpg';
 import GimageThree from '../../images/gimage-three.jpg';
@@ -36,15 +38,37 @@ const Gallery = () => {
                 <img src={GimageSeven} alt="" />
             </div>
         </div>
-        <div className='gallery-body'>
-            {Photos.map(({img}) => {
-                return(
-                    <div className='gallery-image-box'>
-                        <img src={img} alt="" />
-                    </div>
-                )
-            })}
+
+        <div className="gallery-body">
+            <div className='first-col'>
+                {PhotoOne.map(({img}) => {
+                    return(
+                        <div className='gallery-image-box'>
+                            <img src={img} alt="" />
+                        </div>
+                    )
+                })}
+            </div>
+            <div className='second-col'>
+                {PhotoTwo.map(({img}) => {
+                    return(
+                        <div className='gallery-image-box'>
+                            <img src={img} alt="" />
+                        </div>
+                    )
+                })}
+            </div>
+            <div className='third-col'>
+                {PhotoThird.map(({img}) => {
+                    return(
+                        <div className='gallery-image-box'>
+                            <img src={img} alt="" />
+                        </div>
+                    )
+                })}
+            </div>
         </div>
+       
     </div>
   )
 }

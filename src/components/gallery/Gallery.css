@@ -101,14 +101,24 @@
                                                             /* GALLERY-BODY */
 
 .gallery-body {
-    margin: 5em auto;
     display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    margin: 5em auto;
+}
+
+.first-col {
+    width: 33%;
+}
+
+.second-col {
+    width: 33%;
+}
+
+.third-col {
+    width: 33%;
 }
 
 .gallery-image-box {
-    width: 25%;
-    /* height: 10%; */
     padding: 1em;
 }
 
