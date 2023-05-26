@@ -95,7 +95,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href="/"><img src={Cappuchino} alt="" /></a> 
+                                <a href="/order"><img src={Cappuchino} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
@@ -115,7 +115,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href="/"><img src={Mocha} alt="" /></a> 
+                                <a href="/order"><img src={Mocha} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
@@ -135,7 +135,7 @@ const Main = () => {
                     <div className="products">
                         <div className="product-top">
                             <div className="product-img">
-                                <a href="/"><img src={Latte} alt="" /></a> 
+                                <a href="/order"><img src={Latte} alt="" /></a> 
                             </div>
                             <div className="product-desc">
                                 <span className='veg'> <FaVimeoSquare/> </span>
