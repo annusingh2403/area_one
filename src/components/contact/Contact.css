@@ -1,0 +1,18 @@
+.contact-button {
+    background-color: rgb(216, 212, 210);
+    width: 5%;
+    padding: .2em;
+    margin: .3em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active-button {
+    background-color: steelblue;
+    width: 5%;
+    padding: .2em;
+    margin: .3em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
