@@ -67,6 +67,14 @@
 
                                                             /* GALLERY-HEAD MEDIA QUERY*/
 
+@media (max-width: 2040px) {
+
+    .gallery-head div {
+        width: 350px;
+        padding: 1em;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .gallery-head div {
