@@ -19,30 +19,37 @@ const Contact = () => {
   return (
     <>
         <div className='contact'>
-
-            <p className={contact ? "active-button" : 'contact-button'} onClick={Contact}>Contact</p>
-            <p className={subscribe ? "active-button" : 'contact-button'} onClick={Subscribe}>Subscribe</p>
-
+            <div className="contact-main">
+            <div className="button-box">
+                <p className={contact ? "active-button" : 'contact-button'} onClick={Contact}>Contact</p>
+                <p className={subscribe ? "active-button" : 'contact-button'} onClick={Subscribe}>Subscribe</p>
+            </div>
+           
             {contact ? 
                 <div className="contact-box">
-                    <form>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" />
-                        <label htmlFor=""></label>
-                    </form>
+                    <p>Name: Annu Singh Chauhan</p>
+                    <p>Mobile: 7380698894</p>
+                    <address>Address: A-19, Vidyut Nagar, Vaishali Nagar, Jaipur-302021</address>
                 </div> : ''
             }
 
             {subscribe ? 
-                <div>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name='name'/>
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name='email'/>
-                    <button>Subscribe</button>
+                <div className='subscribe-box'>
+                    <div>
+                        <input type="text" placeholder='Name:'/>
+                    </div>
+                    <div>
+                        <input type="email" placeholder='Email:'/>
+                    </div>
+                    <div>
+                        <input type="number" placeholder='Mobile:'/>
+                    </div>
+                    <div className='subscribe-button'>
+                        <button>Submit</button>
+                    </div>
                 </div> : ''
             }
-            
+            </div>
         </div>   
     </>
   )
