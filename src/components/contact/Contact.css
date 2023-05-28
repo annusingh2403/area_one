@@ -5,17 +5,26 @@
 }
 
 .contact-main {
-    width: 50%;
+    width: 650px;
+    /* height: 250px; */
     margin: 10% auto;
     display: flex;
-    /* background-color: gray; */
+}
+
+.button-box {
+    width: 25%;
 }
 
 .button-box p{
-    width: auto;
+    width: 8em;
     padding: .3em 1em;
     border-radius: 5px;
     margin-right: 5em;
+}
+
+.button-box p:hover {
+    opacity: .7;
+    transition: all .2s ease;
 }
 
 .contact-button {
@@ -38,11 +47,13 @@
 }
 
 .contact-box {
+    width: 75%;
     box-shadow: 1px 5px 8px 2px rgb(182, 198, 211);
     padding: 1em;
 }
 
 .subscribe-box {
+    width: 75%;
     box-shadow: 1px 5px 8px 2px rgb(182, 198, 211);
     padding: 1em;
 }
@@ -52,6 +63,7 @@
 }
 
 .subscribe-box input {
+    width: 20em;
     outline: none;
     border: none;
     background-color: #e4e1e1;
@@ -64,3 +76,81 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.subscribe-button {
+    float: right;
+    
+}
+
+.subscribe-button button {
+    padding: .1em .8em;
+    border: none;
+    background-color: steelblue;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-button button:hover {
+    opacity: .7;
+    transition: all .2s ease;
+}
+
+                                                                /* MEDIA QUERY */
+
+@media (max-width: 800px) {
+
+    .contact-main {
+        width: 580px;
+    }
+
+}
+
+@media (max-width: 666px) {
+
+    .contact-main {
+        width: 100%;
+        
+    }
+
+    .button-box {
+        /* margin: 0 auto; */
+    }
+
+    .button-box p{
+        width: 6em;
+        padding: .3em .5em;
+        border-radius: 5px;
+        margin-right: 4em;
+    }
+
+    .subscribe-box input {
+        width: 15em;
+        outline: none;
+        border: none;
+        background-color: #e4e1e1;
+        padding: .2em .5em;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .contact {
+        width: 98%;
+    }
+
+    .button-box p{
+        width: 6em;
+        padding: .3em .5em;
+        border-radius: 5px;
+        margin-right: 4em;
+    }
+
+    .subscribe-box input {
+        width: 15em;
+        outline: none;
+        border: none;
+        background-color: #e4e1e1;
+        padding: .2em .5em;
+    }
+   
+}
