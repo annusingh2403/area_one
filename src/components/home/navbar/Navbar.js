@@ -36,6 +36,7 @@ const Navbar = () => {
                 <li><Link to="/facts" className={nav === '/facts' ? "activeNav" : ''} onClick={((e) => activeNav(e, "facts"))}>Facts</Link></li>
                 <li><Link to="/gallery" className={nav === '/gallery' ? "activeNav" : ''} onClick={((e) => activeNav(e, "gallery"))}>Gallery</Link></li>
                 <li><Link to="/contact" className={nav === '/contact' ? "activeNav" : ''} onClick={((e) => activeNav(e, "contact"))}>Contact</Link></li>
+                <li><Link to="/cart" className={nav === '/cart' ? "activeNav" : ''} onClick={((e) => activeNav(e, "contact"))}>Cart</Link></li>
             </ul>
             {/* <ul className='nav-list'>
                 <li><Link to="/" className={nav === '/' ? "activeNav" : ''} >Home</Link></li>

@@ -25,7 +25,6 @@ const Order = () => {
         filterByType(param);
     }
 
-
   return (
     <>
         <div className="order-navbar">
@@ -78,7 +77,6 @@ const Order = () => {
                             </div>
                             )
                         })}
-
                 </div>
             </div>
         </div>          

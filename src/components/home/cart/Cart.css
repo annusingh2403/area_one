@@ -1,0 +1,11 @@
+.cart {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    width: 40%;
+    background-color: lightgray;
+    margin: 10em auto;
+}
+
