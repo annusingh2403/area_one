@@ -1,18 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Cart.css';
 import {CartItems} from './CartItems.js';
 
 const Cart = () => {
+
+    const [count, setCount] = useState(0);
+
+    const Increase = () => {
+        const countPlus = count + 1;
+        setCount(countPlus);
+    }
+
+    const Decrease = () => {
+        const countMinus = count - 1;
+        setCount(countMinus);
+    }
+
   return (
     <>
         <div className="cart">
            
                 {CartItems.map((item) => {
                     return(
-                        <div className="cart-item">
+                        <div key={item.id} className="cart-item">
                             <img src={item.img} alt="" />
-                            <h5>{item.name}</h5>
-                            <p>{item.phrase}</p>
+                            <div className='cart-item-desc'>
+                                <h5>{item.name}</h5>
+                                <p>{item.phrase}</p>
+                            </div>
+                           <div className="plus-minus">
+                                <button onClick={(Decrease)}>-</button>
+                                <p>{count}</p>
+                                <button onClick={Increase}>+</button>
+                           </div>
                         </div>
                     )
                 })}
