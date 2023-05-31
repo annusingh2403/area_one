@@ -40,7 +40,7 @@ const Gallery = () => {
         </div>
 
         <div className="gallery-body">
-            <div className='first-col'>
+            <div className='first-col gallery-images'>
                 {PhotoOne.map(({img}) => {
                     return(
                         <div className='gallery-image-box'>
@@ -49,7 +49,7 @@ const Gallery = () => {
                     )
                 })}
             </div>
-            <div className='second-col'>
+            <div className='second-col gallery-images'>
                 {PhotoTwo.map(({img}) => {
                     return(
                         <div className='gallery-image-box'>
@@ -58,7 +58,7 @@ const Gallery = () => {
                     )
                 })}
             </div>
-            <div className='third-col'>
+            <div className='third-col gallery-images'>
                 {PhotoThird.map(({img}) => {
                     return(
                         <div className='gallery-image-box'>

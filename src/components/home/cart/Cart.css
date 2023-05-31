@@ -4,7 +4,7 @@
 }
 
 .cart-item {
-    width: 40%;
+    width: 600PX;
     background-color: lightgray;
     margin: 2em auto;
     display: flex;
@@ -34,4 +34,40 @@
     color: white;
     font-size: 1.1rem;
     font-weight: 900;
+}
+
+.cart-total {
+    background-color: steelblue;
+    width: 250px;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.total-item {
+    margin-left: 1em;
+    padding: .2em 1em;
+}
+
+.total-value {
+    margin-left: 1em;
+    padding: .2em 1em;
+}
+                                                                /* MEDIA QUERY */
+
+
+@media (max-width: 666px) {
+
+    .cart-item {
+        width: 500PX;
+        margin: 2em auto;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .cart-item {
+        width: 400PX;
+    }
 }

@@ -133,5 +133,11 @@
 .gallery-image-box img {
     width: 100%;
     border-radius: 5px;
+    /* box-shadow: 1px 1px 10px 2px rgb(138, 139, 139); */
 }
 
+.gallery-image-box img:hover {
+    box-shadow: 1px 1px 10px 2px rgb(228, 7, 161);
+    transform: scale(1.01);
+    transition: all .2s ease;
+}
