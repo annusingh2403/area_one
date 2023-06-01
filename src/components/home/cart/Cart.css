@@ -4,26 +4,38 @@
 }
 
 .cart-item {
-    width: 600PX;
-    background-color: lightgray;
+    width: 800PX;
     margin: 2em auto;
     display: flex;
+    justify-content: space-between;
     border-radius: 10px;
+    align-items: center;
+    /* background-color: rgb(236, 229, 229); */
+    /* padding: 1em; */
 }
 
 .cart-item img {
-    width: 100px;
-    border-radius: 10px;
+    width: 110px;
+    border-radius: 7px;
 }
 
 .cart-item-desc {
     padding: 0 1em;
+    width: 150px;
+    margin-right: 1em;
 }
 
 .plus-minus {
     display: flex;
     align-items: center;
     margin: 0 1em;
+    width: 150px;
+}
+
+.plus-minus p {
+    border: 1px solid rgb(161, 160, 160);
+    padding: 0 1em;
+    border-radius: 2px;
 }
 
 .plus-minus button {
@@ -34,6 +46,17 @@
     color: white;
     font-size: 1.1rem;
     font-weight: 900;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.item-price {
+    font-weight: 600;
+    width: 150px;
+}
+
+.item-delete {
+    cursor: pointer;
 }
 
 .cart-total {
