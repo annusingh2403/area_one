@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from './Cart';
 
-const Item = ({img, name, phrase, price}) => {
+const Item = ({id, img, name, price}) => {
 
+    const {removeItem} = useContext(CartContext)
 
   return (
     <>
@@ -19,7 +21,7 @@ const Item = ({img, name, phrase, price}) => {
             <div className='item-price'>
                 ₹ {price}/- 
             </div>
-            <div className='item-delete'>
+            <div className='item-delete' onClick={() => removeItem(id)}>
                 ❌
             </div>
         </div>
